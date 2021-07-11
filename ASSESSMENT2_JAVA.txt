@@ -1,0 +1,52 @@
+package assessments;
+import java.util.Scanner;
+import java.lang.*;
+
+
+public class Assessment1 {
+	public static void main(String[] args) {
+	
+      Scanner sc = new Scanner(System.in);
+	System.out.println("Enter the runs between 0 and 6 scored in all the balls");
+	 int total=0;
+     int runs[] = new int[10];
+     for(int i=0; i<10; i++)
+     {
+    	 runs[i]= sc.nextInt(); 
+    	 
+    	 total += runs[i];
+     }
+    System.out.println("Total runs= "+total);
+     int strikeRate=0;
+    		 for(int i=0; i<10; i++)
+    		 {strikeRate += runs[i];
+    		 
+    		 
+     }
+    		 strikeRate=strikeRate/10;	 
+    System.out.println("StrikeRate= " + strikeRate);
+     
+	int count0 =0, count1 =0, count2 =0, count3 =0, count4 =0, count6=0;
+	for(int i=0;i<10;i++)
+	 { if (runs[i]==0)
+		 count0++;
+	 if (runs[i]==1)
+		 count1++;
+	 if (runs[i]==2)
+		 count2++;
+	 if (runs[i]==3)
+		 count3++;
+	 if (runs[i]==4)
+		 count4++;
+	 if (runs[i]==6)
+		 count6++;}
+	 System.out.println("Total 0s="+ count0);
+	 System.out.println("Total 1s="+ count1);
+	 System.out.println("Total 2s="+ count2);
+	 System.out.println("Total 3s="+ count3);
+	 System.out.println("Total 4s="+ count4);
+	 System.out.println("Total 6s="+ count6);
+	 
+	 
+	 
+     }
